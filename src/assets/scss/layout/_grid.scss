@@ -1,0 +1,5 @@
+@import '../mixins';
+
+.normal-grid-ccc {
+  @include l-normal-grid(center, center, center);
+}

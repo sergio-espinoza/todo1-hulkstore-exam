@@ -1,0 +1,94 @@
+@import '../mixins';
+
+.normal-flex-rcc {
+  @include l-normal-flex(row, center, center);
+}
+.normal-flex-ree {
+  @include l-normal-flex(row, space-evenly, space-evenly);
+}
+.normal-flex-rbb {
+  @include l-normal-flex(row, space-between, space-between);
+}
+.normal-flex-raa {
+  @include l-normal-flex(row, space-around, space-around);
+}
+.normal-flex-rcc {
+  @include l-normal-flex(row, center, center);
+}
+.normal-flex-ree {
+  @include l-normal-flex(row, space-evenly, space-evenly);
+}
+.normal-flex-raa {
+  @include l-normal-flex(row, space-around, space-around);
+}
+.normal-flex-rbb {
+  @include l-normal-flex(row, space-between, space-between);
+}
+.normal-flex-rtt {
+  @include l-normal-flex(row, flex-start, flex-start);
+}
+.normal-flex-rdd {
+  @include l-normal-flex(row, flex-end, flex-end);
+}
+.normal-flex-rce {
+  @include l-normal-flex(row, center, space-evenly);
+}
+.normal-flex-rca {
+  @include l-normal-flex(row, center, space-around);
+}
+.normal-flex-rcb {
+  @include l-normal-flex(row, center, space-between);
+}
+.normal-flex-rct {
+  @include l-normal-flex(row, center, flex-start);
+}
+.normal-flex-red {
+  @include l-normal-flex(row, space-evenly, flex-end);
+}
+
+
+.normal-flex-ccc {
+  @include l-normal-flex(column, center, center);
+}
+.normal-flex-cee {
+  @include l-normal-flex(column, space-evenly, space-evenly);
+}
+.normal-flex-cbb {
+  @include l-normal-flex(column, space-between, space-between);
+}
+.normal-flex-caa {
+  @include l-normal-flex(column, space-around, space-around);
+}
+.normal-flex-ccc {
+  @include l-normal-flex(column, center, center);
+}
+.normal-flex-cee {
+  @include l-normal-flex(column, space-evenly, space-evenly);
+}
+.normal-flex-caa {
+  @include l-normal-flex(column, space-around, space-around);
+}
+.normal-flex-cbb {
+  @include l-normal-flex(column, space-between, space-between);
+}
+.normal-flex-ctt {
+  @include l-normal-flex(column, flex-start, flex-start);
+}
+.normal-flex-cdd {
+  @include l-normal-flex(column, flex-end, flex-end);
+}
+.normal-flex-cce {
+  @include l-normal-flex(column, center, space-evenly);
+}
+.normal-flex-cca {
+  @include l-normal-flex(column, center, space-around);
+}
+.normal-flex-ccb {
+  @include l-normal-flex(column, center, space-between);
+}
+.normal-flex-cct {
+  @include l-normal-flex(column, center, flex-start);
+}
+.normal-flex-ced {
+  @include l-normal-flex(column, space-evenly, flex-end);
+}

@@ -1,0 +1,12 @@
+@for $i from 0 through 4 {
+  $step: $i * 25;
+  .w-#{$step}-p {
+    width: $step + 0%;
+  }
+}
+@for $i from 0 through 4 {
+  $step: $i * 25;
+  .w-#{$step}-vh {
+    width: $step + 0vh;
+  }
+}
