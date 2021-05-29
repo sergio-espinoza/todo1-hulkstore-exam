@@ -1,1 +1,29 @@
-<p>signin works!</p>
+<div class="signin h-100vh normal-flex-ccc ta-center">
+  <div class="signin__container">
+    <mat-card class="signin__content">
+      <mat-card-title>Iniciar Sesión</mat-card-title>
+      <mat-card-content class="form">
+        <form [formGroup]="signInForm" class="form__content normal-flex-ccc" (ngSubmit)="signIn()">
+          <mat-form-field class="form__field">
+            <mat-label>Usuario</mat-label>
+            <mat-icon matPrefix>person</mat-icon>
+            <input type="text" matInput formControlName="username" maxlength="11" autocomplete="off" />
+            <mat-error>Usuario en mal formato!!</mat-error>
+          </mat-form-field>
+          <mat-form-field class="form__field">
+            <mat-label>Contraseña</mat-label>
+            <mat-icon matPrefix>vpn_key</mat-icon>
+            <input type="password" matInput formControlName="password" autocomplete="off" />
+            <mat-error>Password en mal formato!!</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-raised-button color="primary" type="submit" [disabled]="signInForm.invalid">
+              Ingresar
+            </button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+    <div class="container__image"></div>
+  </div>
+</div>

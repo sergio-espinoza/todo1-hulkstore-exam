@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeNameService } from 'src/app/core';
 
 @Component({
   selector: 'app-intranet',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intranet.component.scss']
 })
 export class IntranetComponent implements OnInit {
+  public title = '';
 
-  constructor() { }
+  constructor(
+    private themeNameSvc: ThemeNameService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public changeThemeColor(themeName: string): void {
+    this.themeNameSvc.setThemeName$(themeName);
+  }
+
+  public changeTitle(title: string): void {
+    this.title = ' | ' + title;
   }
 
 }

@@ -1,0 +1,23 @@
+.avatar__image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+
+.navlist__content {
+  padding-top: 0;
+  display: grid;
+  place-content: start stretch;
+  grid-template-rows: repeat(6, auto) 40fr auto;
+  justify-items: center;
+
+  mat-list-item {
+    opacity: 0.85;
+    margin-top: .5rem;
+
+    &.selected-link {
+      opacity: 1;
+    }
+  }
+}

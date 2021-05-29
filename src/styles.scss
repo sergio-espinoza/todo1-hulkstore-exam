@@ -1,5 +1,7 @@
 @use './assets/scss/base';
 @use './assets/scss/themes/default';
+@use './assets/scss/typography';
+@use './assets/scss/variables';
 
 // layout
 @use './assets/scss/layout/display';
@@ -13,3 +15,5 @@
 
 //elements
 @use './assets/scss/elements/button';
+@use './assets/scss/elements/material';
+

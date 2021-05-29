@@ -8,3 +8,23 @@
   position: relative;
 }
 
+@for $i from 1 through 4 {
+  .t-#{$i}rem {
+    top: $i + 0rem;
+  }
+}
+@for $i from 1 through 4 {
+  .b-#{$i}rem {
+    bottom: $i + 0rem;
+  }
+}
+@for $i from 1 through 4 {
+  .l-#{$i}rem {
+    left: $i + 0rem;
+  }
+}
+@for $i from 1 through 4 {
+  .r-#{$i}rem {
+    right: $i + 0rem;
+  }
+}

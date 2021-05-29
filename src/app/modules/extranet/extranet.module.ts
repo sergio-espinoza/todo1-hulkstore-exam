@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ExtranetRoutingModule } from './extranet-routing.module';
 import { ExtranetComponent } from './extranet.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -10,7 +11,7 @@ import { ExtranetComponent } from './extranet.component';
     ExtranetComponent
   ],
   imports: [
-    CommonModule,
+    SharedModule,
     ExtranetRoutingModule
   ]
 })

@@ -1,2 +1,20 @@
-$bg-hulk: rgba(83, 110, 29, 1);
-$bg-primary-hulk: rgba(4, 107, 52, 1);
+$bg-primary: rgba(83, 110, 29, 1);
+$bg-primary-400: rgba(150, 107, 100, 1);
+
+.bg-primary {
+  background-color: $bg-primary;
+}
+.bg-primary-gradient {
+  background: $bg-primary-400;
+  background: linear-gradient(
+    117deg,
+    rgba(2, 0, 36, 0.8) 0%,
+    rgba(83, 110, 29, 0.8) 5%,
+    rgba(148, 193, 65, 0.4) 48%,
+    rgba(80, 114, 37, 0.8) 89%,
+    rgba(0, 212, 255, 0.5) 98%
+  );
+}
+.bg-primary-400 {
+  background-color: $bg-primary-400;
+}

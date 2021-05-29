@@ -28,6 +28,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { ScrollingModule } from '@angular/cdk/scrolling';
@@ -64,6 +66,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatRippleModule,
     MatStepperModule,
     MatTabsModule,
+    MatGridListModule,
     MatProgressBarModule,
   ]
 })

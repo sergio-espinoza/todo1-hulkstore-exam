@@ -6,7 +6,7 @@
 }
 @for $i from 0 through 4 {
   $step: $i * 25;
-  .w-#{$step}-vh {
-    width: $step + 0vh;
+  .w-#{$step}-vw {
+    width: $step + 0vw;
   }
 }
