@@ -1,9 +1,9 @@
-import { DBConfig } from 'ngx-indexed-db';
+import { DBConfig, DBMode } from 'ngx-indexed-db';
 import { migrationFactory } from './database-migration.config';
 
 export const dbConfig: DBConfig = {
   name: 'hulkStoreDB',
-  version: 1,
+  version: 2,
   objectStoresMeta: [
     {
       store: 'user',

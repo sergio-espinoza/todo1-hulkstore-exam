@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { LocalStorageService } from './core/api/local-storage.service';
+import { DatabaseService } from './core/database';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +11,21 @@ export class AppComponent implements OnInit {
   public title = 'hulStore';
 
   constructor(
-    private afAuthvc: AngularFireAuth
-  ) {  }
+    private databaseSvc: DatabaseService<any>,
+    private localStorageSvc: LocalStorageService
+  ) { }
 
   ngOnInit(): void {
-    this.afAuthvc.signInWithEmailAndPassword('48479567.sjep@gmail.com', '123456789').then(
-      console.log
-    );
+    this.initObjectStores();
+  }
+
+  private initObjectStores(): void {
+    if (this.localStorageSvc.getItem('init-prev-render')) {
+      console.log('app is not new');
+      return;
+    }
+    console.log('app is new');
+    this.databaseSvc.ensureInitObjectStores();
+    this.localStorageSvc.setItem('init-prev-render', 'pre-render-initialized');
   }
 }

@@ -12,5 +12,13 @@ export class DatabaseService<T> {
     return this.indexedDBSvc.addItem(storeName, item);
   }
 
+  public ensureInitObjectStores(): void {
+    this.indexedDBSvc.createObjectStore({
+      store: '12ykdlwwq=:dsq112233911',
+      storeConfig: { keyPath: '', autoIncrement: false },
+      storeSchema: []
+    })
+  }
+
 }
 

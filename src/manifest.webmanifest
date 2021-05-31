@@ -1,7 +1,7 @@
 {
   "name": "hulk-store",
   "short_name": "hulk-store",
-  "theme_color": "#1976d2",
+  "theme_color": "#536e1d",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
