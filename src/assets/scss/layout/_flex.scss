@@ -24,6 +24,9 @@
 .normal-flex-rbb {
   @include l-normal-flex(row, space-between, space-between);
 }
+.normal-flex-rbc {
+  @include l-normal-flex(row, space-between, center);
+}
 .normal-flex-rtt {
   @include l-normal-flex(row, flex-start, flex-start);
 }
