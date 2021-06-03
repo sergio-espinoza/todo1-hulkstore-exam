@@ -1,11 +1,22 @@
-$bg-primary: rgba(83, 110, 29, 1);
-$bg-primary-400: rgba(150, 107, 100, 1);
+$tp-primary: rgba(83, 110, 29, 1);
+$tp-light: rgba(255, 255, 255, 1);
+$tp-primary-400: rgba(150, 107, 100, 1);
+$tp-blue-400: rgba(20, 186, 227, 1);
 
 .bg-primary {
-  background-color: $bg-primary;
+  background-color: $tp-primary;
+}
+.bg-blue-400 {
+  background-color: $tp-blue-400;
+}
+.bg-light {
+  background-color: $tp-light;
+}
+.bg-primary-400 {
+  background-color: $tp-primary-400;
 }
 .bg-primary-gradient {
-  background: $bg-primary-400;
+  background: $tp-primary-400;
   background: linear-gradient(
     117deg,
     rgba(2, 0, 36, 0.8) 0%,
@@ -14,7 +25,4 @@ $bg-primary-400: rgba(150, 107, 100, 1);
     rgba(80, 114, 37, 0.8) 89%,
     rgba(0, 212, 255, 0.5) 98%
   );
-}
-.bg-primary-400 {
-  background-color: $bg-primary-400;
 }
