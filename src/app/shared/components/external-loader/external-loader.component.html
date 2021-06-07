@@ -1,0 +1,18 @@
+<div class="background__navigation {{ loaderProperties.backgroundColorClass }}">
+  <div
+    class="background__navigation__main"
+    [ngStyle]="{
+      top: loaderProperties.topPercentaje,
+      left: loaderProperties.leftPercentaje,
+      visibility: loaderProperties.visibility
+    }"
+  ></div>
+  <div
+    class="background__navigation__shadow"
+    [ngStyle]="{
+      top: loaderProperties.topPercentaje,
+      left: loaderProperties.leftPercentaje,
+      visibility: loaderProperties.visibility
+    }"
+  ></div>
+</div>

@@ -15,6 +15,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'auth',
+    data: { animation: 'ToTop' },
     loadChildren: () =>
       import('./modules/auth/auth.module').then(m => m.AuthModule)
   },

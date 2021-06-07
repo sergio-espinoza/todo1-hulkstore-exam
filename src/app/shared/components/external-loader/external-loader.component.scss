@@ -1,0 +1,20 @@
+.background__navigation {
+  &__shadow,
+  &__main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    transition-property: top, left, display;
+  }
+
+  &__shadow {
+    background-color: inherit;
+    opacity: 0.3;
+    transition-duration: 1s, 1s, 0s;
+  }
+  &__main {
+    background-color: inherit;
+    transition-duration: 2s, 2s, 0s;
+  }
+}

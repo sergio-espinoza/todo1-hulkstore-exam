@@ -10,10 +10,12 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { dbConfig } from './config/database/database-init.config';
+import { ExternalLoaderComponent } from './shared/components/external-loader';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ExternalLoaderComponent
   ],
   imports: [
     BrowserModule,
