@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     this.localStorageSvc.setItem('init-prev-render', 'pre-render-initialized');
   }
 
-  prepareRoute(outlet: RouterOutlet): string {
-    return outlet?.activatedRouteData?.animation;
+  public prepareRoute(outlet: RouterOutlet): any {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 }

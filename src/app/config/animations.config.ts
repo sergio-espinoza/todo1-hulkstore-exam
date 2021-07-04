@@ -9,14 +9,17 @@ export const slideInAnimation = trigger('routeAnimations', [
       })
     ]),
     query(':enter', [
-      style({ top: '100%', opacity: 0.5 })
+      style({ opacity: 0 })
     ], { optional: true }),
     query(':leave', [
-      style({ visibility: 'hidden' })
+      style({ top: '0%' })
     ], { optional: true }),
     group([
       query(':enter', [
-        animate('1000ms ease-out', style({ top: '-100%', opacity: 1 }))
+        animate('1000ms ease-out', style({ opacity: 1 }))
+      ], { optional: true }),
+      query(':leave', [
+        animate('1000ms ease-out', style({ top: '-100%' }))
       ], { optional: true })
     ]),
   ]),
